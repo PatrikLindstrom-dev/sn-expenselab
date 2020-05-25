@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="item" max_length="40" name="x_459524_expense_item" text_index="true" type="collection">
+    <element label="item" max_length="40" name="x_459524_expense_item" sizeclass="8" text_index="true" type="collection">
         <element label="Account" max_length="40" name="account" type="integer"/>
         <element label="Amount" max_length="15" name="amount" type="decimal"/>
         <element attributes="edge_encryption_enabled=true" label="Business purpose" max_length="40" name="business_purpose" type="string"/>
-        <element default="NOK" label="Currency" mandatory="true" max_length="3" name="currency" type="string"/>
+        <element default="SEK" label="Currency" mandatory="true" max_length="3" name="currency" type="string"/>
         <element label="Due Diligence candidate" max_length="40" name="due_diligence_candidate" type="boolean"/>
         <element attributes="encode_utf8=false" label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Expense report" max_length="32" name="expense_report" reference="x_459524_expense_report" type="reference"/>
@@ -14,6 +14,7 @@
                 <element inactive_on_update="false" label="Transportation" value="transportation"/>
             </choice>
         </element>
+        <element label="Honey" max_length="5" name="honey" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="yes" label="Receipt status" max_length="40" name="receipt_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="No" value="no"/>
