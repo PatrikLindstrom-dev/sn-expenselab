@@ -14,6 +14,7 @@
                 <element inactive_on_update="false" label="Transportation" value="transportation"/>
             </choice>
         </element>
+        <element label="foobar" max_length="5" name="foobar" type="string"/>
         <element label="Honey" max_length="5" name="honey" type="string"/>
         <element label="Honey2" max_length="5" name="honey2" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="yes" label="Receipt status" max_length="40" name="receipt_status" type="choice">
